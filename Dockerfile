@@ -26,5 +26,5 @@ WORKDIR /root/goproMax-ffmpeg-v5
 RUN ./configure --enable-opencl --enable-opengl --enable-sdl2 --enable-libx264 --enable-gpl --disable-x86asm
 RUN make -j$(nproc)
 RUN make -j$(nproc) install
-# Go into 
+# Go into /root where git packages exist
 WORKDIR /root

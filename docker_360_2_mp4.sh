@@ -10,7 +10,7 @@ fi
 INPUT_DIR=$(realpath "$1")
 OUTPUT_DIR=$(realpath "$2")
 
-# Name of your custom Docker image
+# Name of custom Docker image
 DOCKER_IMAGE="nbonnie/360_2_mp4:latest"
 
 # Run the Docker container with mounted volumes
@@ -20,5 +20,5 @@ docker run --rm \
     "$DOCKER_IMAGE" \
     /bin/bash -c "./root/firefly_processing_auto/360_2_mp4.sh /input /output"
 
-# Notify the user that the process is complete
+# Process complete message
 echo "Conversion complete. Output files are in: $OUTPUT_DIR"

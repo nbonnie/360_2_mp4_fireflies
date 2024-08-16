@@ -27,4 +27,4 @@ RUN ./configure --enable-opencl --enable-opengl --enable-sdl2 --enable-libx264 -
 RUN make -j$(nproc)
 RUN make -j$(nproc) install
 # Go into /root where git packages exist
-WORKDIR /root
+WORKDIR /root/firefly_processing_auto

@@ -18,7 +18,7 @@ docker run --rm \
     -v "$INPUT_DIR":/input \
     -v "$OUTPUT_DIR":/output \
     "$DOCKER_IMAGE" \
-    /bin/bash -c "./root/firefly_processing_auto/360_2_mp4.sh /input /output"
+    /bin/bash -c "./360_2_mp4.sh /input /output"
 
 # Process complete message
 echo "Conversion complete. Output files are in: $OUTPUT_DIR"

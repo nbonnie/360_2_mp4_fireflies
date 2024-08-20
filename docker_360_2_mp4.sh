@@ -14,7 +14,8 @@ OUTPUT_DIR=$(realpath "$2")
 DOCKER_IMAGE="nbonnie/360_2_mp4:latest"
 
 # Run the Docker container with mounted volumes
-docker run --rm \
+docker run --rm --platform linux/amd64 \
+    --gpus all --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all \
     -v "$INPUT_DIR":/input \
     -v "$OUTPUT_DIR":/output \
     "$DOCKER_IMAGE" \

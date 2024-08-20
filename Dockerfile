@@ -15,6 +15,7 @@ RUN apt-get -y install libx264-dev
 # Grab opencl headers for compiling ffmpeg manually
 RUN apt-get -y install opencl-headers
 RUN apt-get -y install ocl-icd-opencl-dev
+RUN apt-get -y install ocl-icd-libopencl1
 # Set directory
 WORKDIR /root
 # Clone ffmpeg fork

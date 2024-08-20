@@ -16,8 +16,10 @@ runit:
 # Run docker with connected volumes
 runvol:
 	docker run --rm -it \
-	-v "/Users/nbonnie/Desktop/360_test_data":/input \
-	-v "/Users/nbonnie/Desktop/360_test_output":/output \
+	--gpus all --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all \
+	-v /usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu \
+	-v "/home/nbonnie/Desktop/test_input":/input \
+	-v "/home/nbonnie/Desktop/test_output":/output \
 	nbonnie/360_2_mp4:latest \
 	/bin/bash
 

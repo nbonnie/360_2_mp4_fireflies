@@ -10,7 +10,7 @@ fi
 INPUT_DIR=$(realpath "$1")
 OUTPUT_DIR=$(realpath "$2")
 
-# Name of custom Docker image
+# Name of Docker image
 DOCKER_IMAGE="nbonnie/360_2_mp4:latest"
 
 # Run the Docker container with mounted volumes

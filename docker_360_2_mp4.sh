@@ -15,11 +15,12 @@ DOCKER_IMAGE="nbonnie/360_2_mp4:latest"
 
 # Run the Docker container with mounted volumes
 docker run --rm --platform linux/amd64 \
-    --gpus all --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all \
+    --gpus all \
+    -v /usr/lib/x86_64-linux-gnu:/test_lib \
     -v "$INPUT_DIR":/input \
     -v "$OUTPUT_DIR":/output \
     "$DOCKER_IMAGE" \
-    /bin/bash -c "./360_2_mp4.sh /input /output"
+    /bin/bash -c "./360_2_mp4.sh /input/ /output/"
 
 # Process complete message
 echo "Conversion complete. Output files are in: $OUTPUT_DIR"

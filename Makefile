@@ -14,10 +14,11 @@ runit:
 	/bin/bash
 
 # Run docker with connected volumes
+# `/usr/lib/x86_64-linux-gnu` points towards local GPU drivers, change if necessary
 runvol:
 	docker run --rm -it \
-	--gpus all --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=all \
-	-v /usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu \
+	--gpus all \
+	-v /usr/lib/x86_64-linux-gnu:/test_lib \
 	-v "/home/nbonnie/Desktop/test_input":/input \
 	-v "/home/nbonnie/Desktop/test_output":/output \
 	nbonnie/360_2_mp4:latest \

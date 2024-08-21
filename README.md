@@ -1,5 +1,5 @@
 # 360_2_mp4_fireflies
-
+```
 %---------------------------------------------------------------------------
 % # Docker-Based 360 Video Conversion Script
 %---------------------------------------------------------------------------
@@ -32,9 +32,9 @@
 % 3. Run the Script:
 %    * Make sure to replace `<input_directory>` and `<output_directory>` with
 %      the appropriate paths.
-%       ```bash
+%       `bash
 %       ./docker_360_2_mp4.sh <input_directory> <output_directory>
-%       ```
+%       `
 %
 %---------------------------------------------------------------------------
 % Note
@@ -55,53 +55,54 @@
 % For a local setup, the following packages need to be installed:
 %
 % # NVIDIA Drivers and CUDA
-% `nvidia-driver-535`
-% `nvidia-utils-535`
-% `cuda-toolkit-12-2`
+% nvidia-driver-535
+% nvidia-utils-535
+% cuda-toolkit-12-2
 %
 % # OpenCL Libraries and Tools
-% `ocl-icd-libopencl1`
-% `opencl-headers`
-% `ocl-icd-opencl-dev`
-% `nvidia-opencl-dev`
+% ocl-icd-libopencl1
+% opencl-headers
+% ocl-icd-opencl-dev
+% nvidia-opencl-dev
 %
 % # FFmpeg Dependencies
-% `autoconf`
-% `automake`
-% `build-essential`
-% `cmake`
-% `libass-dev`
-% `libfreetype6-dev`
-% `libgnutls28-dev`
-% `libmp3lame-dev`
-% `libsdl2-dev`
-% `libtool`
-% `libva-dev`
-% `libvdpau-dev`
-% `libvorbis-dev`
-% `libxcb1-dev`
-% `libxcb-shm0-dev`
-% `libxcb-xfixes0-dev`
-% `meson`
-% `ninja-build`
-% `pkg-config`
-% `texinfo`
-% `wget`
-% `yasm`
-% `zlib1g-dev`
-% `libunistring-dev`
-% `libaom-dev`
-% `libx264-dev`
+% autoconf
+% automake
+% build-essential
+% cmake
+% libass-dev
+% libfreetype6-dev
+% libgnutls28-dev
+% libmp3lame-dev
+% libsdl2-dev
+% libtool
+% libva-dev
+% libvdpau-dev
+% libvorbis-dev
+% libxcb1-dev
+% libxcb-shm0-dev
+% libxcb-xfixes0-dev
+% meson
+% ninja-build
+% pkg-config
+% texinfo
+% wget
+% yasm
+% zlib1g-dev
+% libunistring-dev
+% libaom-dev
+% libx264-dev
 %
 % # Docker and NVIDIA Docker Integration
-% `nvidia-container-toolkit`
-% `nvidia-docker2`
+% nvidia-container-toolkit
+% nvidia-docker2
 %
 % # Miscellaneous Tools
-% `vim`
-% `git-core`
+% vim
+% git-core
 %
 %---------------------------------------------------------------------------
 % License
 %---------------------------------------------------------------------------
 % This project is licensed under the MIT License - see the LICENSE file for details.
+```
